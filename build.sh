@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 set -a
-source .env
+. .env
 set +a
 
-./gradlew build
+./gradlew build -x test

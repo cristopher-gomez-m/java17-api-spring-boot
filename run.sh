@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
 set -a
-source .env
+. .env
 set +a
 
-./gradlew bootRun --args='--server.port=8000'
+java -jar build/libs/api-java-test-0.0.1-SNAPSHOT.jar
