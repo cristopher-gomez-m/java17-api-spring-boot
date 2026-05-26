@@ -5,11 +5,8 @@ WORKDIR /app
 COPY . .
 
 RUN chmod +x gradlew
-RUN chmod +x build.sh
-RUN chmod +x run.sh
-
-RUN sh build.sh
+RUN chmod +x run-dev.sh
 
 EXPOSE 8080
 
-CMD ["sh", "run.sh"]
+CMD ["sh", "run-dev.sh"]
